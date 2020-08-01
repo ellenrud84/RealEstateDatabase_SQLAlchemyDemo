@@ -23,6 +23,3 @@ Data Sources
 
 Files location: https://drive.google.com/drive/folders/15sKnJGCKU_VsG290i97kzsAnyc1tFNNT 
 
-
-ERD 
-![Figure](ETL_Project_ERD.png)
