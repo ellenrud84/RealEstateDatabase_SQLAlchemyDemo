@@ -30,6 +30,8 @@ Files location: https://drive.google.com/drive/folders/15sKnJGCKU_VsG290i97kzsAn
 1.	Extract and Transform HCAD Data: ETL_HCAD.IPYNB
 2.	Extract and Transform Flood and Crime Data: ETl_flood_and_crime_data.IPYNB
 3.	Extract and Transform School Data: 
-      a.	school_data_transformation.IPYNB
-      b.	school_zone_transformation.IPYNB
+<ul>
+ <li> school_data_transformation.IPYNB </li>
+ <li> school_zone_transformation.IPYNB </li>
+</ul>
 4.	Load Real Estate Database:  ETL_Project_Load.IPYNB, Houston_Real_Estate_db.sql
