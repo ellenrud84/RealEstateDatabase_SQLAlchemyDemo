@@ -2,7 +2,7 @@
 To do the ETL (Extract, Transform and Load) of the data needed to run an application for Houston Real Estate Investment Dashboard.
 
 
-#Data Sources
+# Data Sources
 
 ## School Ratings: 
   *	Source: https://texasschoolguide.org/school-rankings/ 
