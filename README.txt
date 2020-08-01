@@ -1,3 +1,7 @@
+Project Description/ Outline
+To do the ETL (Extract, Transform and Load) of the data needed to run an application for Houston Real Estate Investment Dashboard.
+
+
 Data Sources
 
 *	School Ratings: 
@@ -18,3 +22,7 @@ Data Sources
 
 
 Files location: https://drive.google.com/drive/folders/15sKnJGCKU_VsG290i97kzsAnyc1tFNNT 
+
+
+ERD 
+![Figure](ETL_Project_ERD.png)
