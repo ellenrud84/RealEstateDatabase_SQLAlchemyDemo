@@ -26,7 +26,7 @@ Files location: https://drive.google.com/drive/folders/15sKnJGCKU_VsG290i97kzsAn
 # Entity-Relation Diagram 
 ![Figure](ETL_Project_ERD.png)
 
-## Running the code
+# Running the code
 1.	Extract and Transform HCAD Data: ETL_HCAD.IPYNB
 2.	Extract and Transform Load Flood and Crime Data: ETl_flood_and_crime_data.IPYNB
 3.	Extract and Transform School Data: 
