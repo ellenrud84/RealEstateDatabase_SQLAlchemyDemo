@@ -50,7 +50,7 @@ def SQL_Pull(budget, neighborhoods):
     appraisal_df['pct_value_change']=(appraisal_df['total_appraised_value_2019']-appraisal_df['total_appraised_value_2018'])\
                                   /appraisal_df['total_appraised_value_2018']*100
     appraisal_df=appraisal_df[['id_2019','account','total_appraised_value_2019', 'pct_value_change']]
-   appraisal_df=appraisal_df.rename(columns={'id_2019':'id'})
+    appraisal_df=appraisal_df.rename(columns={'id_2019':'id'})
 
     # Filter by budget on year 2019
     results_df=appraisal_df.loc[appraisal.total_appraised_value_2019<=budget,:]
@@ -149,70 +149,70 @@ def home():
     return render_template("index.html")
 
 
-# Query the database and send the jsonified results
-@app.route("/send", methods=["GET", "POST"])
-def send():
-    if request.method == "POST":
-        if (request.form["budget"] != Null)
-            max_budget = request.form["budget"]
-        else  max_budget = 1000000
+# # Query the database and send the jsonified results
+# @app.route("/send", methods=["GET", "POST"])
+# def send():
+#     if request.method == "POST":
+#         if (request.form["budget"] != Null)
+#             max_budget = request.form["budget"]
+#         else  max_budget = 1000000
 
-        if (request.form["sch_imp_all"] != Null)
-            imp_all_schools =["sch_imp_all"]
-        else   imp_all_schools = 10,
+#         if (request.form["sch_imp_all"] != Null)
+#             imp_all_schools =["sch_imp_all"]
+#         else   imp_all_schools = 10,
 
-        if (request.form["sch_imp_elem"] != Null)
-            imp_all_schools =["sch_imp_elem"]
-        else   imp_all_schools = 10,
+#         if (request.form["sch_imp_elem"] != Null)
+#             imp_all_schools =["sch_imp_elem"]
+#         else   imp_all_schools = 10,
         
-        if (request.form["sch_imp_elem"] != Null)
-            imp_all_schools =["sch_imp_elem"]
-        else   imp_all_schools = 10,
+#         if (request.form["sch_imp_elem"] != Null)
+#             imp_all_schools =["sch_imp_elem"]
+#         else   imp_all_schools = 10,
 
 
                         
         
 
-        imp_elem_schools = request.form["sch_imp_elem"]
-        imp_mid_schools = request.form["sch_imp_mid"]
-        imp_high_schools = request.form["sch_imp_high"]
-        imp_crime = request.form["crime_imp"]
-        imp_flood= request.form["flood_imp"]
-        imp_val_inc= request.form["val_inc_imp"]
+#         imp_elem_schools = request.form["sch_imp_elem"]
+#         imp_mid_schools = request.form["sch_imp_mid"]
+#         imp_high_schools = request.form["sch_imp_high"]
+#         imp_crime = request.form["crime_imp"]
+#         imp_flood= request.form["flood_imp"]
+#         imp_val_inc= request.form["val_inc_imp"]
 
-        pet = Pet(name=name, lat=lat, lon=lon)
-        db.session.add(pet)
-        db.session.commit()
-        return redirect("/", code=302)
+#         pet = Pet(name=name, lat=lat, lon=lon)
+#         db.session.add(pet)
+#         db.session.commit()
+#         return redirect("/", code=302)
 
-    return render_template("form.html")
+#     return render_template("form.html")
 
 
-@app.route("/results")
-def pals():
-    results = db.session.query(Pet.name, Pet.lat, Pet.lon).all()
+# @app.route("/results")
+# def pals():
+#     results = db.session.query(Pet.name, Pet.lat, Pet.lon).all()
 
-    hover_text = [result[0] for result in results]
-    lat = [result[1] for result in results]
-    lon = [result[2] for result in results]
+#     hover_text = [result[0] for result in results]
+#     lat = [result[1] for result in results]
+#     lon = [result[2] for result in results]
 
-    pet_data = [{
-        "type": "scattergeo",
-        "locationmode": "USA-states",
-        "lat": lat,
-        "lon": lon,
-        "text": hover_text,
-        "hoverinfo": "text",
-        "marker": {
-            "size": 50,
-            "line": {
-                "color": "rgb(8,8,8)",
-                "width": 1
-            },
-        }
-    }]
+#     pet_data = [{
+#         "type": "scattergeo",
+#         "locationmode": "USA-states",
+#         "lat": lat,
+#         "lon": lon,
+#         "text": hover_text,
+#         "hoverinfo": "text",
+#         "marker": {
+#             "size": 50,
+#             "line": {
+#                 "color": "rgb(8,8,8)",
+#                 "width": 1
+#             },
+#         }
+#     }]
 
-    return jsonify(pet_data)
+#     return jsonify(pet_data)
 
 
 if __name__ == "__main__":
