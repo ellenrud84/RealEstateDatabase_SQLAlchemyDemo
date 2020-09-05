@@ -134,7 +134,7 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-# from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "sqlite:///db.sqlite"
 
 # # Remove tracking modifications
@@ -148,7 +148,6 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return render_template("index.html")
-
 
 # # Query the database and send the jsonified results
 # @app.route("/send", methods=["GET", "POST"])
