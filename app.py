@@ -1,11 +1,11 @@
  #Import Dependencies
-    import sqlalchemy
-    from sqlalchemy.ext.automap import automap_base
-    from sqlalchemy.orm import Session
-    from sqlalchemy import create_engine, func, inspect,join
-    from key import url
-    import numpy as np
-    import pandas as pd
+import sqlalchemy
+from sqlalchemy.ext.automap import automap_base
+from sqlalchemy.orm import Session
+from sqlalchemy import create_engine, func, inspect,join
+from key import url
+import numpy as np
+import pandas as pd
 
 # 1. Import datatable from Jonathan's csv:
 # -----------------------------------------
